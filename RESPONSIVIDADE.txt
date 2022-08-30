@@ -1,0 +1,67 @@
+----------CONTEUDO RESPONSIVO---------
+
+
+
+Para obter um conteúdo responsivo é necessario comandos que alinham os objetos e centralizam os mesmo
+podendo alterar tamanho de imagens e adaptar pra dispositivos menores e maiores.
+
+então basicamente utilizando o comando WIDTH(LARGURA) eu consigo determinar a largura do objeto desejado
+e o comando HEIGTH(ALTURA) eu consigo determinar a altura do objeto desejado.
+
+
+PRA TER UMA "BOA" RESPONSIVIDADE NOS SITES, É DE EXTREMA IMPORTANCIA DETERMINAR LARGURA E ALTURA DOS OBJETOS
+
+EXISTE UM COMANDO QUE DETERMINA ATÉ QUANTOS PIXELS A IMAGEM IRÁ SE MANTER AJUSTANDO
+E TBM EXISTE UMA FORMA DE DETERMINAR UMA QUANTIDADE DE PIXELS ESPECIFICAS PARA QUE ULTRAPASSANDO ESSA QUANTIA
+A IMAGEM SEJA SUBSTITUIDA POR UMA MENOR OU MAIOR E ASSIM MANTER A RESPONSIVIDADE EM DIA.
+
+
+O comando pra ter uma boa responsividade seria:
+
+
+main {
+   	min-width: 320px;   (min/max) são mais responsivos
+   	max-width: 800px;  (800px é o "maior" tamanho que uma tela pode ter)    <---- esses comandos funcionam com conteudos de texto.
+}
+
+
+
+Para fazer o mesmo processo de fazer uma imagem se adaptar ao tamanho da tela, o comando seria:
+
+
+img {
+	width: 100%;   ( Que ai a imagem iria se adaptar ao tamanho da tela, ficaria responsivo. )
+}
+
+
+
+
+E para fazer a troca de tamanho de imagens ficar mais responsivo ainda, o comando seria : 
+
+
+primeiramente, pelo fato de ser uma substituição de imagem, a imagem obviamente estaria no <body> correto?
+detro do bory, ela estaria <img src= etc> correto?
+
+Pronto, pra fazer a mudança de imagens responsiva, teria que envelopar essa tag <img> com a tag <picture>
+como ficaria a tag completa?
+
+
+<picture>
+	<source media= (max-width: 600px)" srcset= "nomedafoto">
+	                                   |
+			     |		     |__ aqui eu seleciono a imagem que vai substituir a atual e manter responsivo.
+       |               |
+	 |		     |__ (min/max) serve pra determinar o tamanho que vai mudar assim que atingir,
+	 |					 ou seja quando a janela atingir 600px, a imagem atual irá mudar pra essa do srcset.
+	 |
+	 |__ serve pra chamar a imagem que vai ser substituida
+ 
+
+
+
+
+
+
+--------------RESPONSIVIDADE NA PRRÁTICA--------------
+
+

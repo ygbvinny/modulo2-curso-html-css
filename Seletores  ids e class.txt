@@ -1,0 +1,90 @@
+---------------------SELETORES PERSONALIZADOS---------------------------
+
+pra modificar apenas uma titulo ou algo especifico, é possivel criar uma id.
+
+
+OQUE É ID?
+
+id é a forma que tem de vc criar uma identidade pra um determinado texto e estilizar apenas ele
+sendo assim é só ir no <h1> desejado ou <p>.   sendo assim <h1 id"nomedesejado">
+depois de criar o id, é so ir no arquivo .css e cikicar o #nomeescolhido e personalizar.
+
+
+
+-----QUAL A DIFERENÇA ENTRE class & id ?------
+
+
+A diferença é que id é utilizado para modificar apenas um texto em especifico e o class é usado pra mudar varios textos
+sendo assim, caso eu queirar modificar varios h1's por exemplo, o certo seria eu usar o class ao invés do id que é unico.
+
+pra chamar o id no arquivo .css basta usar a #nomeid
+pra chamar a class no arquivo .css basta usar o .nomeclass
+
+existe tbm a possibilidade de colocar mais de uma class em um texto, nao precisa por virgulas pra separar uma da outra, basta separar com espaço
+e manter elas dentro das aspas.
+
+tbm tem como colocar uma id junto de uma class, basta colocar o comando ao lado do primeiro.
+
+
+
+
+-----------PSEUDOCLASSES-------------
+
+
+Pseudoclasses basicmanete é quando voce add algumas funçoes em alguma parte do "texto"
+Exemplo: se eu atribur algum link utilizando o <a>, quando eu for na parte de estilos eu vou poder utilizar
+o codigo ( a:visited e por uma cor ) que ai basicamente eu estaria personalizando a cor do nome que o link esta atribuindo pra informar que ja foi visitado o site
+
+
+utilizando a div:hover da pra add um funçao que revela o texto ao passar o mouse em cima de um determinado texto.
+
+
+
+-------SIMBOLOGIAS PARA SELETORES PERSONALIZADOS-------
+
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = clildren
+
+
+
+
+
+----------MODELOS DE CAIXAS--------------
+
+<div> faz com que eu utilize o box-level, sendo assim o elemento vai pra linha de baixo e ocupa a tela toda.
+<span> faz com que eu utilize o inline-level, sendo assim o elemento será asicionado na mesma linha e ocupara apenas o espaço necessario.
+
+
+
+-------TIPOS DE CAIXA------
+
+BOX-LEVEL (Quebra Linha e Começa da Proxima Linha)
+
+<div>
+<h1/h6>
+<p>
+<main>
+<header>
+<nav>
+<article>
+<aside>
+<footer>
+<form>
+<video>
+
+INLINE-LEVEL (Não Quebra Linha e Continua na Mesma Linha)
+
+<span>
+<a>
+<code>
+<small>
+<strong>
+<em>
+<sup/sub>
+<label>
+<button>
+<input>
+<select>

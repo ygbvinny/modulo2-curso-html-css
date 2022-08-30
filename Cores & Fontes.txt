@@ -1,0 +1,52 @@
+-----PSICOLOGIA DAS CORES-----
+
+
+Basicamente é interessante criar site, com uma boa harmonia de cores, para que fique bem apresentado para o cliente final.
+
+
+
+
+-----FAMILIA DE FONTES-----
+
+
+É interessante colocar uma familia de fontes que o navegador consiga reconhecer e nao estrague a experiencia do usuario.
+
+<font-family: Arial, Hevlvetica, sans-serif;> é o comando mais utilizado pelo fato de os navegadores usarem esse formato como padrão.
+
+
+
+-----TAMANHOS DE FONTES------
+
+Existe varias formas de colocar um font-size:  (RECOMENDADO USAR em & px)
+
+Tem as Medidas Absolutas: cm, mm, in(polegadas), px, pt(ponto), pc(paica).
+
+Tem as Medidas Relativas: em, ex, rem, vw, vh, %
+( 16px geralmente é = 1em )
+tentar sempre usar em, por conta do ajuste em telas diferentes
+
+weight é PESO
+width é LARGURA
+height é ALTURA
+
+
+
+É possivel configuyrar a fonte apenas utilizando uma linha de codigo, sendo assim simplificando e sendo objetivo no estilo
+
+o codigo seria: font: italic bolder 3em 'work sans', sans-serif  <--- porem alterando oq for desejado, mais seguindo a mesma ordem.
+
+outro exemplo: font: bold 2em 'Work Sans', sans-serif;
+
+
+
+---------CSS----------
+
+Tudo que começar com arroba(@) no CSS, tem que ser colocado logo abaixo do <style> ou nas primeiras linhas do documento de CSS separado
+(@import) é uma regra! e tem que estar fora de um seletor. --> {}
+
+
+
+-------ALINHAMENTO DE TEXTO------
+
+Para alinhar textos, seja eles paragrafos ou titulos, utilizar o comando text-align: center/right/left
+usar justify para ter o alinhamento dos dois lados.
